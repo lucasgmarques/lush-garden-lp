@@ -15,15 +15,21 @@ module.exports = {
       "dark-900": "#121212",
       white: "#ffffff",
       "grey-100": "#F8F8F8",
+      "grey-200": "#D9D9D9",
     },
     extend: {
+      gridTemplateColumns: {
+        3: "repeat(3, minmax(360px, 1fr))",
+      },
       fontFamily: {
         latoBlack: "LatoBlack",
         latoRegular: "LatoRegular",
         ralewayMedium: "RalewayMedium",
       },
       backgroundImage: {
-        plantBg: "url('/public/plantBg.svg')",
+        "cta-bg": "url('/bg-cta.png')",
+        "flowers-bg": "url('/flowers.svg')",
+        "flower-bg": "url('/flower.svg')",
       },
     },
   },

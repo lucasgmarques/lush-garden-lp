@@ -4,6 +4,9 @@ import Product from "@/pages/components/Product";
 import Benefits from "./components/Benefits";
 import Gallery from "./components/Gallery";
 import Testimonials from "./components/Testimonials";
+import CTA from "./components/CTA";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +22,9 @@ export default function Home() {
       <Benefits />
       <Gallery />
       <Testimonials />
+      <CTA />
+      <Blog />
+      <Footer />
     </>
   );
 }

@@ -19,7 +19,7 @@ export default function About() {
           a thoughtful gift.
         </p>
       </div>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-x-8 gap-y-4 lg:gap-x-16">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-4 lg:gap-x-16">
         <AboutCard
           image={indoorPlant}
           title="Indoor Plants"

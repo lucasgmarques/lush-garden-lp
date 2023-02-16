@@ -35,9 +35,9 @@ export default function Testimonials() {
         What do they say about us
       </h2>
 
-      <div className="grid gap-4 lg:gap-20 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 lg:gap-20 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {people.map((person) => (
-          <TestimonialCard {...person} />
+          <TestimonialCard key={person.id} {...person} />
         ))}
       </div>
     </section>

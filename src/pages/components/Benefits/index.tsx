@@ -45,7 +45,7 @@ export default function Benefits() {
         <Image
           src={bgBenefits}
           alt="An image of plants over the table"
-          className="hidden object-cover w-full md:block lg:rounded-r-lg"
+          className="md:h-[350px] hidden object-cover w-full md:block lg:rounded-r-lg"
         />
       </div>
       <div className="grid flex-1 gap-4 px-2 py-2 lg:py-0 lg:px-2 lg:gap-2 md:grid-cols-2 lg:grid-cols-2">
