@@ -6,7 +6,7 @@ import bambooPlant from "../../../../public/Bamboo_Plant.svg";
 
 export default function About() {
   return (
-    <section className="container p-8 mx-auto lg:px-12 lg:py-24">
+    <section className="container p-8 mx-auto lg:px-12 lg:py-[120px]">
       <div className="flex flex-col mb-8 lg:gap-20 lg:mb-8 lg:flex-row">
         <h2 className="mb-4 text-2xl text-green-900 capitalize md:text-4xl lg:text-4xl font-latoRegular">
           We Help choose the most <br /> suitable plants for you

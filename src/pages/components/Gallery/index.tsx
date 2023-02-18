@@ -8,7 +8,7 @@ import image5 from "../../../../public/images/image-5.png";
 
 export default function Gallery() {
   return (
-    <section className="py-8 lg:py-24">
+    <section className="py-[60px] lg:pb-[120px]">
       <h2 className="mb-10 text-2xl text-center text-green-900 lg:mb-8 md:text-4xl font-latoRegular lg:text-4xl">
         Our Gallery View
       </h2>

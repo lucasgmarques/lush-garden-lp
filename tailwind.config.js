@@ -30,6 +30,7 @@ module.exports = {
         "cta-bg": "url('/bg-cta.png')",
         "flowers-bg": "url('/flowers.svg')",
         "flower-bg": "url('/flower.svg')",
+        "hero-bg": "url('/hero.svg')",
       },
     },
   },

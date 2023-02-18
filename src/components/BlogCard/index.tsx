@@ -27,7 +27,9 @@ export default function BlogCard({
       />
       <div>
         <h3 className="mb-1 text-xl text-green-900 font-latoBlack">{title}</h3>
-        <p className="h-[72px] mb-2 text-base text-dark-900">{description}</p>
+        <p className="h-fit lg:[72px] mb-2 text-base text-dark-900">
+          {description}
+        </p>
 
         <div className="flex items-center justify-between">
           <p className="flex items-center gap-2 opacity-80">

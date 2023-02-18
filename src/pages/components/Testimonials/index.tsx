@@ -30,15 +30,17 @@ const people: TestimonialCardProps[] = [
 
 export default function Testimonials() {
   return (
-    <section className="container p-8 mx-auto lg:p-24">
-      <h2 className="mb-10 text-2xl text-center text-green-900 lg:mb-8 md:text-4xl font-latoRegular lg:text-4xl">
-        What do they say about us
-      </h2>
+    <section className="pb-[60px] lg:pb-[120px]">
+      <div className="container px-8 mx-auto">
+        <h2 className="mb-10 text-2xl text-center text-green-900 lg:mb-8 md:text-4xl font-latoRegular lg:text-4xl">
+          What do they say about us
+        </h2>
 
-      <div className="grid gap-4 lg:gap-20 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
-        {people.map((person) => (
-          <TestimonialCard key={person.id} {...person} />
-        ))}
+        <div className="grid gap-4 lg:gap-20 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+          {people.map((person) => (
+            <TestimonialCard key={person.id} {...person} />
+          ))}
+        </div>
       </div>
     </section>
   );

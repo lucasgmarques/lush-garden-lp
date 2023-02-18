@@ -10,7 +10,7 @@ export default function CTA() {
         </div>
         <div className="flex flex-col items-center justify-center w-full gap-4 lg:flex-1 lg:flex-row">
           <input
-            className="w-full  px-2 py-2 bg-[transparent] rounded-md border-2 border-grey-200"
+            className="w-full  px-2 py-2 bg-[transparent] text-white rounded-md border-2 border-grey-200"
             placeholder="Enter your email"
             type="text"
           />
