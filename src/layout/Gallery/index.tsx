@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-import image1 from "../../../../public/images/image-1.png";
-import image2 from "../../../../public/images/image-2.png";
-import image3 from "../../../../public/images/image-3.png";
-import image4 from "../../../../public/images/image-4.png";
-import image5 from "../../../../public/images/image-5.png";
+import image1 from "../../../public/images/image-1.png";
+import image2 from "../../../public/images/image-2.png";
+import image3 from "../../../public/images/image-3.png";
+import image4 from "../../../public/images/image-4.png";
+import image5 from "../../../public/images/image-5.png";
 
 export default function Gallery() {
   return (
-    <section className="py-[60px] lg:pb-[120px]">
+    <section id="gallery" className="py-[60px] lg:pb-16">
       <h2 className="mb-10 text-2xl text-center text-green-900 lg:mb-8 md:text-4xl font-latoRegular lg:text-4xl">
         Our Gallery View
       </h2>

@@ -1,11 +1,11 @@
 import Card from "@/components/Card";
 import Image from "next/image";
 
-import bgBenefits from "../../../../public/images/bg-image.png";
-import timeConsuming from "../../../../public/time-cosuming.svg";
-import growSprout from "../../../../public/grow-sprout.svg";
-import temperature from "../../../../public/temperature.svg";
-import pruning from "../../../../public/pruning.svg";
+import bgBenefits from "../../../public/images/bg-image.png";
+import timeConsuming from "../../../public/time-cosuming.svg";
+import growSprout from "../../../public/grow-sprout.svg";
+import temperature from "../../../public/temperature.svg";
+import pruning from "../../../public/pruning.svg";
 
 const benefitsCards = [
   {
@@ -40,7 +40,10 @@ const benefitsCards = [
 
 export default function Benefits() {
   return (
-    <section className="flex flex-col items-stretch gap-1 lg:flex-row lg:pb-[120px]">
+    <section
+      id="benefits"
+      className="flex flex-col items-stretch gap-1 lg:flex-row lg:pb-16"
+    >
       <div className="flex-1">
         <Image
           src={bgBenefits}

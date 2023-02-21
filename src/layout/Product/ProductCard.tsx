@@ -10,7 +10,7 @@ type ProductCardProps = {
 export default function ProductCard({ image, price, title }: ProductCardProps) {
   return (
     <article className="overflow-hidden border rounded-lg border-[rgba(0,0,0,0.08)]">
-      <Image src={image} alt={title} className="object-cover h-64" />
+      <Image src={image} alt={title} className="object-cover h-48" />
       <div className="flex flex-col justify-between p-4">
         <div className="flex justify-between">
           <h3 className="text-lg text-green-500 font-latoBlack">{title}</h3>

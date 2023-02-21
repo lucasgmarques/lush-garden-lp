@@ -1,6 +1,9 @@
 export default function CTA() {
   return (
-    <section className={`bg-cta-bg bg-no-repeat bg-cover bg-center h-[400px]`}>
+    <section
+      id="cta"
+      className={`bg-cta-bg bg-no-repeat bg-cover bg-center h-[400px]`}
+    >
       <div className="container flex flex-col items-center justify-center w-full h-full gap-8 p-12 mx-auto lg:justify-between md:flex-row lg:flex-row">
         <div className="lg:flex-1 lg:mb-0">
           <h3 className="text-2xl leading-relaxed lg:text-[2rem] md:text-[1.5rem] text-white capitalize font-latoRegular">

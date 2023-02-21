@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { TestimonialCardProps } from "./types";
+import TestimonialCardProps from "../../@types/types";
 
-export default function TestimonialCard({
+export function TestimonialCard({
   title,
   description,
   image,

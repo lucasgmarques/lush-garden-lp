@@ -1,14 +1,15 @@
 import Head from "next/head";
-import About from "@/pages/components/About";
-import Product from "@/pages/components/Product";
-import Benefits from "./components/Benefits";
-import Gallery from "./components/Gallery";
-import Testimonials from "./components/Testimonials";
-import CTA from "./components/CTA";
-import Blog from "./components/Blog";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
+import About from "@/layout/About";
+
 import Navbar from "@/components/Navbar";
+import Hero from "@/layout/Hero";
+import Product from "@/layout/Product";
+import Benefits from "@/layout/Benefits";
+import Gallery from "@/layout/Gallery";
+import Testimonials from "@/layout/Testimonials";
+import CTA from "@/layout/CTA";
+import Blog from "@/layout/Blog";
+import Footer from "@/layout/Footer";
 
 export default function Home() {
   return (

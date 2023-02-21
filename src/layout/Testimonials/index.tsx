@@ -1,8 +1,8 @@
-import avatar1 from "../../../../public/avatar-1.svg";
-import avatar2 from "../../../../public/avatar-2.svg";
-import avatar3 from "../../../../public/avatar-3.svg";
-import TestimonialCard from "./TestimonialCard";
-import { TestimonialCardProps } from "./types";
+import TestimonialCardProps from "@/@types/types";
+import { TestimonialCard } from "@/components/TestimonialCard";
+import avatar1 from "../../../public/avatar-1.svg";
+import avatar2 from "../../../public/avatar-2.svg";
+import avatar3 from "../../../public/avatar-3.svg";
 
 const people: TestimonialCardProps[] = [
   {
@@ -30,7 +30,7 @@ const people: TestimonialCardProps[] = [
 
 export default function Testimonials() {
   return (
-    <section className="pb-[60px] lg:pb-[120px]">
+    <section id="testimonials" className="pb-[60px] lg:pb-[120px]">
       <div className="container px-8 mx-auto">
         <h2 className="mb-10 text-2xl text-center text-green-900 lg:mb-8 md:text-4xl font-latoRegular lg:text-4xl">
           What do they say about us

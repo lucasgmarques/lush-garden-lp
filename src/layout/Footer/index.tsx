@@ -1,9 +1,9 @@
 import Image from "next/image";
-import flowersbg from "../../../../public/flowers.svg";
-import flowerbg from "../../../../public/flower.svg";
-import instagram from "../../../../public/instagram.svg";
-import twitter from "../../../../public/twitter.svg";
-import facebook from "../../../../public/facebook.svg";
+import flowersbg from "../../../public/flowers.svg";
+import flowerbg from "../../../public/flower.svg";
+import instagram from "../../../public/instagram.svg";
+import twitter from "../../../public/twitter.svg";
+import facebook from "../../../public/facebook.svg";
 
 export default function Footer() {
   return (
