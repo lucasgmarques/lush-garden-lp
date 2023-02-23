@@ -19,10 +19,10 @@ export default function Card({
     <div
       className={
         colored
-          ? `${colored} p-9 lg:py-4 lg:px-12 lg:text-left text-center rounded-lg`
+          ? `${colored} p-4 lg:py-4 lg:px-12 lg:text-left text-center rounded-lg`
           : `lg:text-left text-center lg:py-4 lg:px-12 ${
               bordered && "rounded-lg border-1 border-[rgba(0,0,0,0.08)] border"
-            }  p-9 lg:p-12 `
+            }  p-4 lg:p-12 `
       }
     >
       <Image

@@ -7,13 +7,22 @@ import logo from "../../../public/logo.svg";
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
 
+  const handleCloseMenu = () => setIsNavOpen(false);
+
+  const links = [
+    { id: 1, href: "#home", label: "Home" },
+    { id: 2, href: "#about", label: "About" },
+    { id: 3, href: "#product", label: "Planters" },
+    { id: 4, href: "#cta", label: "Contact" },
+  ];
+
   return (
-    <header className="bg-green-900 w-full h-28 ">
-      <div className="max-w-screen-xl mx-auto flex items-center justify-between w-full h-full px-8">
+    <header className="w-full bg-green-900 h-28 ">
+      <div className="flex items-center justify-between w-full h-full max-w-screen-xl px-8 mx-auto">
         <Image src={logo} alt="logo of website" />
         {/* button to open menu */}
         <div
-          className="md:hidden lg:hidden xl:hidden cursor-pointer"
+          className="cursor-pointer md:hidden lg:hidden xl:hidden"
           onClick={() => setIsNavOpen((prev) => !prev)}
         >
           {!isNavOpen ? (
@@ -38,41 +47,21 @@ export default function Navbar() {
         </div>
         {/* menu mobile */}
         {isNavOpen && (
-          <div className="absolute z-10 top-0 right-0 w-full h-screen overflow-hidden bg-green-900">
+          <div className="absolute top-0 right-0 z-10 w-full h-screen overflow-hidden bg-green-900">
             <ul className="flex flex-col items-center justify-center h-full gap-5">
-              <li>
-                <Link
-                  className="p-4 text-2xl text-white md:text-lg lg:text-lg hover:text-green-500"
-                  href={"/home"}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="p-4 text-2xl text-white md:text-lg lg:text-lg hover:text-green-500"
-                  href={"/about"}
-                >
-                  About us
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="p-4 text-2xl text-white md:text-lg lg:text-lg hover:text-green-900"
-                  href={"/home"}
-                >
-                  Planters
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="p-4 text-2xl text-white md:text-lg lg:text-lg hover:text-green-900"
-                  href={"/home"}
-                >
-                  Contact
-                </Link>
-              </li>
-              <button className="px-10 py-1 text-2xl text-white transition duration-200 ease-in-out border border-white rounded-lg hover:bg-green-900 hover:text-white hover:border-green-900">
+              {links.map(({ id, href, label }) => (
+                <li key={id}>
+                  <Link
+                    className="p-4 text-2xl text-white md:text-lg lg:text-lg hover:text-green-500"
+                    href={href}
+                    scroll={false}
+                    onClick={handleCloseMenu}
+                  >
+                    {label}
+                  </Link>
+                </li>
+              ))}
+              <button className="px-10 py-1 text-2xl text-white transition duration-200 ease-in-out border border-white rounded-lg hover:bg-white hover:text-white hover:border-white">
                 Call us
               </button>
             </ul>
@@ -80,43 +69,18 @@ export default function Navbar() {
         )}
         <nav className="hidden md:flex lg:flex">
           <ul className="flex items-center gap-5">
-            <li>
-              <Link
-                className="p-4 text-white md:text-base lg:text-lg hover:text-green-500"
-                href={"#home"}
-                scroll={false}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="p-4 text-white md:text-base lg:text-lg hover:text-green-500"
-                href={"#about"}
-                scroll={false}
-              >
-                About us
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="p-4 text-white md:text-base lg:text-lg hover:text-green-500"
-                href={"#product"}
-                scroll={false}
-              >
-                Planters
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="p-4 text-white md:text-base lg:text-lg hover:text-green-500"
-                href={"#cta"}
-                scroll={false}
-              >
-                Contact
-              </Link>
-            </li>
-            <button className="px-10 py-1 lg:text-lg md:text-base text-white transition duration-200 ease-in-out border border-white rounded-lg hover:bg-green-900 hover:text-white hover:border-green-900">
+            {links.map(({ id, href, label }) => (
+              <li key={id}>
+                <Link
+                  className="p-4 text-white md:text-base lg:text-lg hover:text-green-500"
+                  href={href}
+                  scroll={false}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+            <button className="px-10 py-1 text-white transition duration-200 ease-in-out border border-white rounded-lg lg:text-lg md:text-base hover:bg-green-500 hover:text-white hover:border-green-500">
               Call us
             </button>
           </ul>

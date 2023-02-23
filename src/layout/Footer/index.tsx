@@ -4,6 +4,7 @@ import flowerbg from "../../../public/flower.svg";
 import instagram from "../../../public/instagram.svg";
 import twitter from "../../../public/twitter.svg";
 import facebook from "../../../public/facebook.svg";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -14,14 +15,32 @@ export default function Footer() {
           src={flowersbg}
           alt="flowers"
         />
-        <div className="container flex flex-col items-center justify-center h-full px-8">
+        <div className="flex flex-col items-center justify-center h-full max-w-xl px-8 mx-auto ">
           <h3 className="mb-8 text-2xl text-white lg:text-4xl font-latoBlack">
             Feel free to contact us
           </h3>
           <div className="flex gap-4">
-            <Image className="h-10" src={instagram} alt="logo of instagram" />
-            <Image className="h-10" src={twitter} alt="logo of twitter" />
-            <Image className="h-10" src={facebook} alt="logo of facebook" />
+            <Link href="https://instagram.com">
+              <Image
+                className="h-10 transition hover:-translate-y-1"
+                src={instagram}
+                alt="logo of instagram"
+              />
+            </Link>
+            <Link href="https://twitter.com">
+              <Image
+                className="h-10 transition hover:-translate-y-1"
+                src={twitter}
+                alt="logo of twitter"
+              />
+            </Link>
+            <Link href="https://facebook.com">
+              <Image
+                className="h-10 transition hover:-translate-y-1"
+                src={facebook}
+                alt="logo of facebook"
+              />
+            </Link>
           </div>
           <nav></nav>
         </div>

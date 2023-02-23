@@ -40,18 +40,21 @@ const benefitsCards = [
 
 export default function Benefits() {
   return (
-    <section
-      id="benefits"
-      className="flex flex-col items-stretch gap-1 lg:flex-row lg:pb-16"
-    >
-      <div className="flex-1">
-        <Image
-          src={bgBenefits}
-          alt="An image of plants over the table"
-          className="md:h-[350px] lg:h-[100%] h-64 object-cover w-full md:block lg:rounded-r-lg"
-        />
+    <section id="benefits" className="flex flex-col gap-1 lg:flex-row lg:pb-16">
+      <div className="flex flex-col items-center justify-center gap-8 px-4 py-16 mx-auto text-center bg-green-900 lg:w-5/12 lg:px-16">
+        <h2 className="text-2xl text-white lg:text-4xl font-latoRegular">
+          All of benefits in one place!
+        </h2>
+        <p className="text-base leading-relaxed text-white lg:text-lg font-latoRegular">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+          cupiditate quaerat nam voluptate totam error quo facilis maiores
+          expedita! Esse.
+        </p>
+        <button className="px-6 py-2 text-green-900 transition bg-white rounded-md hover:bg-green-500 hover:text-white">
+          Check it out!
+        </button>
       </div>
-      <div className="grid flex-1 gap-4 px-8 py-2  lg:py-0 lg:px-2 lg:gap-2 md:grid-cols-2 lg:grid-cols-2">
+      <div className="grid flex-1 gap-4 px-4 py-2 lg:py-0 lg:px-2 lg:gap-2 md:grid-cols-2 lg:grid-cols-2">
         {benefitsCards.map(({ id, image, description, title }) => (
           <Card
             key={id}

@@ -16,9 +16,10 @@ export default function CTA() {
             className="w-full  px-2 py-2 bg-[transparent] text-white rounded-md border-2 border-grey-200"
             placeholder="Enter your email"
             type="text"
+            required
           />
           <button
-            className="px-6 py-2 text-white bg-green-900 border-2 border-green-900 rounded-md hover:bg-green-500 hover:border-green-500 lg:px-12"
+            className="w-full px-6 py-2 text-white bg-green-900 border-2 border-green-900 rounded-md lg:w-60 md:w-full hover:bg-green-500 hover:border-green-500 lg:px-12"
             type="submit"
           >
             Submit

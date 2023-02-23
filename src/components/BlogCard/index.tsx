@@ -21,7 +21,7 @@ export default function BlogCard({
   return (
     <article className="overflow-hidden rounded-t-lg">
       <Image
-        className="object-cover w-full h-[360px] mb-4"
+        className="object-cover w-full h-48 mb-4 lg:h-64"
         src={image}
         alt="blog image"
       />
@@ -37,7 +37,7 @@ export default function BlogCard({
             {formatDate(created_at)}
           </p>
           <Link
-            className="flex items-center gap-2 text-green-900 font-latoBlack"
+            className="flex items-center gap-2 text-green-900 transition font-latoBlack hover:-translate-y-1"
             href={`/posts/${id}`}
           >
             Read more

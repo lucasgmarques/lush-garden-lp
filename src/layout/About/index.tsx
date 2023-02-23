@@ -7,12 +7,15 @@ import bambooPlant from "../../../public/Bamboo_Plant.svg";
 
 export default function About() {
   return (
-    <section id="about" className="container p-8 mx-auto lg:px-12 lg:py-16">
+    <section
+      id="about"
+      className="container px-4 py-8 mx-auto lg:px-12 lg:py-16"
+    >
       <div className="flex flex-col mb-8 lg:gap-20 lg:mb-8 lg:flex-row">
         <h2 className="mb-4 text-2xl text-green-900 capitalize md:text-4xl lg:text-4xl font-latoRegular">
           We Help choose the most <br /> suitable plants for you
         </h2>
-        <p className="flex-1 mb-10 font-ralewayMedium lg:text-lg">
+        <p className="flex-1 font-ralewayMedium lg:text-lg">
           Our selection includes a wide variety of flowers, from classic roses
           to exotic orchids, as well as a variety of lush indoor and outdoor
           plants and also offer unique floral arrangements that are perfect for
